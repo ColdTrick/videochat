@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="ColdTrick IT Solutions" />
+	<field key="version" value="0.3.1" />
+	<field key="description" value="Have a videochat room in Elgg" />
+	<field key="website" value="http://www.coldtrick.com/" />
+	<field key="copyright" value="(C) ColdTrick IT Solutions 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2010040201" />
+</plugin_manifest>
+<!-- 
+
+=========================
+Features
+=========================
+- Uses TokBox to provide a videochat room
+- Requires API keys to work (configure in videochat/vendors/callwidget-tokbox-php-sdk-v0/API_Config.php)
+	+ sandbox keys: http://sandbox.tokbox.com/view/platformkeys
+	+ production keys: http://me.tokbox.com/platformsignup
+- Available rooms are listed based on access
+- Rooms will automatically be removed after 24 hours
+- Can also be used by non-loggedin users (Join Only)
+
+=========================
+Version Information
+=========================
+0.3.1 (2011-01-03):
+	- fixed: dropdown menu dissappears behind flashobject (chatwindow) 
+		
+0.3 (2010-12-30):
+	- added: configure partner key/secret and api server in plugin settings
+	- added: popout option to open room in a new window/tab (admin setting)
+	- added: embed (free) tokbox option
+	- changed: group rooms now open in two_column layout (with group context)
+	- changed: width of rooms (wider)
+
+0.2 (2010-12-15):
+	- added: create/join a videochat directly from a group menu
+	- added: group chatrooms are persistent
+	- added: delete button (admin only)
+	- changed: logic of create action
+	- fixed: call to undefined function remove in actions/create.php
+	- fixed: cron does not delete rooms
+0.1:
+	- first release
+
+-->
